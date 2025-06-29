@@ -1,0 +1,199 @@
+/* Feedback visual y responsividad */
+.spinner {
+  border: 4px solid #e3eaf2;
+  border-top: 4px solid #2d8cff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  animation: spin 1s linear infinite;
+  margin: 24px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.success {
+  color: #1bbf4c;
+  background: #e6fbe9;
+  border: 1px solid #b6e7c9;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 12px 0;
+  display: inline-block;
+}
+.error {
+  color: #d32f2f;
+  background: #fdeaea;
+  border: 1px solid #f5c6cb;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 12px 0;
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px 2px;
+    max-width: 100vw;
+  }
+  table, th, td {
+    font-size: 0.95em;
+    padding: 8px 4px;
+  }
+  form {
+    padding: 8px;
+  }
+  button {
+    padding: 6px 8px;
+    font-size: 0.95em;
+  }
+}
+body {
+  background: #f7f7f7;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.App {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 32px 24px 24px 24px;
+}
+
+h1 {
+  color: #2d3a4a;
+  margin-bottom: 24px;
+}
+
+form {
+  background: #f0f4f8;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 32px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #2d3a4a;
+}
+
+form input {
+  padding: 6px 10px;
+  border: 1px solid #bfc9d1;
+  border-radius: 4px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+form button {
+  background: #2d8cff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 18px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+form button:disabled {
+  background: #bfc9d1;
+  cursor: not-allowed;
+}
+
+form button:hover:not(:disabled) {
+  background: #1a6ed8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f9fafb;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+th, td {
+  padding: 12px 10px;
+  text-align: left;
+}
+
+th {
+  background: #e3eaf2;
+  color: #2d3a4a;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background: #f0f4f8;
+}
+
+tr:hover {
+  background: #e6f0ff;
+}
+
+button {
+  background: #2d8cff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 14px;
+  margin-right: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #1a6ed8;
+}
+
+.App h2 {
+  margin-top: 0;
+  color: #2d3a4a;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

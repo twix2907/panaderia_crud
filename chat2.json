@@ -1,0 +1,127 @@
+{
+  "requesterUsername": "twix2907",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/152929721",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_dc14c817-87d5-43ed-8af6-d98be58a9a65",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 4
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 5
+            },
+            "text": "hola",
+            "kind": "text"
+          }
+        ],
+        "text": "hola"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "¡Hola! ¿En qué puedo ayudarte hoy con tu proyecto?",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/c:/Users/Jhanpool/Documents/Proyecto_CC/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_56e5cfc7-3e6e-45fc-be4d-6f57f6f5922b",
+      "result": {
+        "timings": {
+          "firstProgress": 776,
+          "totalElapsed": 796
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<context>\nThe current date is June 28, 2025.\n</context>\n<editorContext>\nThe user's current file is c:\\Users\\Jhanpool\\Documents\\Proyecto_CC\\chat.json. \n</editorContext>\n<reminder>\nYou are an agent - you must keep going until the user's query is completely resolved, before ending your turn and yielding back to the user. ONLY terminate your turn when you are sure that the problem is solved, or you absolutely cannot continue.\nYou take action when possible- the user is expecting YOU to take action and go to work for them. Don't ask unnecessary questions about the details if you can simply DO something useful instead.\nWhen using the insert_edit_into_file tool, avoid repeating existing code, instead use a line comment with \\`...existing code...\\` to represent regions of unchanged code.\n</reminder>\n<userRequest>\nhola\n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "renderedGlobalContext": [
+            {
+              "type": 1,
+              "text": "<environment_info>\nThe user's current OS is: Windows\nThe user's default shell is: \"powershell.exe\". When you generate terminal commands, please generate them correctly for this shell.\n</environment_info>\n<workspace_info>\nI am working in a workspace with the following folders:\n- c:\\Users\\Jhanpool\\Documents\\Proyecto_CC \nI am working in a workspace that has the following structure:\n```\nchat.json\ncredentials_db.txt\ncuentaazure.txt\nDESCRIPCION_PROYECTO.md\nis.txt\npackage.json\nbackend/\n\tbackend.zip\n\tdb.js\n\tindex.js\n\tpackage.json\n\tcontrollers/\n\t\tproductosController.js\n\troutes/\n\t\tproductos.js\nfrontend/\n\tpackage.json\n\tREADME.md\n\tbuild/\n\t\tasset-manifest.json\n\t\tfavicon.ico\n\t\tindex.html\n\t\tlogo192.png\n\t\tlogo512.png\n\t\tmanifest.json\n\t\trobots.txt\n\t\tstatic/\n\t\t\tcss/\n\t\t\t\tmain.6cdc19d5.css\n\t\t\t\tmain.6cdc19d5.css.map\n\t\t\tjs/\n\t\t\t\t453.670e15c7.chunk.js\n\t\t\t\t453.670e15c7.chunk.js.map\n\t\t\t\tmain.6d7579ce.js\n\t\t\t\tmain.6d7579ce.js.LICENSE.txt\n\t\t\t\tmain.6d7579ce.js.map\n\tpublic/\n\t\tfavicon.ico\n\t\tindex.html\n\t\tlogo192.png\n\t\tlogo512.png\n\t\tmanifest.json\n\t\trobots.txt\n\tsrc/\n\t\tapi.js\n\t\tApp.css\n\t\tApp.js\n\t\tApp.test.js\n\t\tFormularioProducto.js\n\t\tindex.css\n\t\tindex.js\n\t\tListaProductos.js\n\t\tlogo.svg\n\t\treportWebVitals.js\n\t\tsetupTests.js\n```\nThis is the state of the context at this point in the conversation. The view of the workspace structure may be truncated. You can use tools to collect more context if needed.\n</workspace_info>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "modelMessageId": "2857ae19-4680-4307-b693-72b3629be477",
+          "responseId": "0da7f789-e8c7-4a8d-8db1-e847476f374a",
+          "sessionId": "4b19652b-34d1-4be1-b96e-c0d00636f124",
+          "agentId": "github.copilot.editsAgent"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled && !chatAgentModeDisallowed",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "list"
+          }
+        ],
+        "disambiguation": []
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1751162599014
+    }
+  ]
+}
