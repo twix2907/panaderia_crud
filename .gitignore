@@ -9,3 +9,13 @@ yarn-error.log*
 
 # Build
 frontend/build/
+
+#archivos sensibles
+chat2.json
+chat.json
+credentials_db.txt
+cuentaazure.txt
+DESCRIPCION_PROYECTO.md
+is.txt
+chat.json
+chat2.json    
