@@ -140,53 +140,6 @@ function ListaProductos() {
       </table>
     </div>
   );
-
-  return (
-    <div>
-      <h2>Lista de Productos</h2>
-      <table border="1" cellPadding="8">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Precio</th>
-            <th>Cantidad</th>
-            <th>Descripción</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          {productos.map(prod => (
-            editandoId === prod.id ? (
-              <tr key={prod.id}>
-                <td>{prod.id}</td>
-                <td><input name="nombre" value={formEdit.nombre} onChange={handleEditChange} /></td>
-                <td><input name="precio" type="number" step="0.01" value={formEdit.precio} onChange={handleEditChange} /></td>
-                <td><input name="cantidad" type="number" value={formEdit.cantidad} onChange={handleEditChange} /></td>
-                <td><input name="descripcion" value={formEdit.descripcion} onChange={handleEditChange} /></td>
-                <td>
-                  <button onClick={handleEditSubmit}>Guardar</button>
-                  <button onClick={() => setEditandoId(null)}>Cancelar</button>
-                </td>
-              </tr>
-            ) : (
-              <tr key={prod.id}>
-                <td>{prod.id}</td>
-                <td>{prod.nombre}</td>
-                <td>{prod.precio}</td>
-                <td>{prod.cantidad}</td>
-                <td>{prod.descripcion}</td>
-                <td>
-                  <button onClick={() => handleEditar(prod)}>Editar</button>
-                  <button onClick={() => handleEliminar(prod.id)}>Eliminar</button>
-                </td>
-              </tr>
-            )
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
 }
 
 export default ListaProductos;
